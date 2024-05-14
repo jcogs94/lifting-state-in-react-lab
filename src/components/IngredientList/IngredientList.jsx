@@ -2,11 +2,15 @@
 import Ingredient from "../Ingredient/Ingredient.jsx";
 import { availableIngredients } from "./availableIngredients.jsx"
 
-const IngredientList = () => {
+const IngredientList = ({ handleButton }) => {
     return <>
         <ul>
             {availableIngredients.map( (ingredient, index) => (
-                <Ingredient key={index} {...ingredient} buttonText='+' />
+                <Ingredient key={index}
+                    {...ingredient} buttonText='+'
+                    handleButton={handleButton}
+                    index={index}
+                />
             ))}
         </ul>
     </>
