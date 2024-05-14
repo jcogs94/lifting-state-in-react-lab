@@ -12,7 +12,7 @@ const App = () => {
       <h1>Burger Stacker</h1>
       <section>
         <IngredientList />
-        <BurgerStack />
+        <BurgerStack stack={stack} />
       </section>
     </main>
   )

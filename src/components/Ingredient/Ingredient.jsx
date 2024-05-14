@@ -1,6 +1,9 @@
-const Ingredient = ({ color, name }) => {
+const Ingredient = ({ color, name, buttonText }) => {
     return <>
-        <li style={{ backgroundColor: `${color}` }} >{name}</li>
+        <li style={{backgroundColor: `${color}`}}>
+            {name}
+            <button>{buttonText}</button>
+        </li>
     </>
 }
 

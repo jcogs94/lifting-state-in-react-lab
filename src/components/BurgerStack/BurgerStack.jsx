@@ -1,8 +1,12 @@
 // `src/components/BurgerStack.jsx`
-const BurgerStack = (props) => {
+import Ingredient from "../Ingredient/Ingredient.jsx"
+
+const BurgerStack = ({ stack }) => {
     return <>
         <ul>
-            {/* map through props.ingredients */}
+            {stack.map( (ingredient, index) => (
+                <Ingredient key={index} {...ingredient} buttonText='X' />
+            ))}
         </ul>
     </>
 }
