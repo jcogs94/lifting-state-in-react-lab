@@ -8,7 +8,7 @@ import BurgerStack from './components/BurgerStack/BurgerStack.jsx'
 const App = () => {
   const [stack, setStack] = useState([])
   
-  const handleButton = (ingredientName, buttonText, index) => {
+  const handleButton = (buttonText, index) => {
     let newStack = [...stack]
     
     if (buttonText === '+') {
